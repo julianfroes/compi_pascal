@@ -1,0 +1,52 @@
+program examenS7B;
+var
+a, sum : integer;
+begin
+read (a);
+read (sum);
+while a >= 9 do
+begin
+	write("1");
+	if a<4 then
+		write("2");
+		a := a + 1;
+	else	
+		write("3");	
+		while a>5 do
+		begin
+			sum := sum +a;
+			a:= a-2;
+		end;
+		write(sum);
+		a := a + 1;
+	endif
+	write("4");
+end;
+a := 9;
+end.
+----------------------------
+program ejemplo1;
+var
+a, x, y : integer;
+b : integer;
+c : real;
+d : string;
+begin
+read (a, b);
+c := a * b;
+/* este es un comentario */
+if c >= 20 then
+	if c >= 20 then
+		write (c);
+	else
+		write (b);
+	endif
+else
+	while c < a do
+		begin
+		write (a);
+		a:= a + 1 ;
+	end;
+endif
+end.
+-----
